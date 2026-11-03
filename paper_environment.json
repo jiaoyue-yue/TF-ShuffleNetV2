@@ -1,0 +1,7 @@
+{
+  "source": "Manuscript section 2.1",
+  "operating_system": "Linux",
+  "python": "3.7",
+  "pytorch": "1.13.1",
+  "gpu": "NVIDIA A40"
+}

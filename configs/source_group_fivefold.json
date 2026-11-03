@@ -1,0 +1,31 @@
+{
+  "manuscript_section": "2.1, 4.1",
+  "epochs": 100,
+  "batch_size": 128,
+  "training_seed": 2026,
+  "optimizer": "AdamW",
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.05,
+  "val_every": 2,
+  "pretrained": false,
+  "augmentation": false,
+  "threshold": 0.5,
+  "checkpoint": "highest positive-class inner-validation F1; earliest exact tie",
+  "refit": false,
+  "class_weights": "N_train/(2*n_c)",
+  "onecycle": {
+    "pct_start": 0.3,
+    "anneal_strategy": "linear",
+    "div_factor": 25.0,
+    "final_div_factor": 10000.0
+  },
+  "protocol": "source_group_fivefold",
+  "max_lr": 0.003,
+  "initial_lr": 0.00012,
+  "split_seed": null,
+  "source_groups": 17,
+  "outer_folds": 5,
+  "records": 2485,
+  "clean": 1754,
+  "infested": 731
+}

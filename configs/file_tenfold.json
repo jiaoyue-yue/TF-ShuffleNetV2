@@ -1,0 +1,26 @@
+{
+  "manuscript_section": "2.1, 4.1",
+  "epochs": 100,
+  "batch_size": 128,
+  "training_seed": 2026,
+  "optimizer": "AdamW",
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.05,
+  "val_every": 2,
+  "pretrained": false,
+  "augmentation": false,
+  "threshold": 0.5,
+  "checkpoint": "highest validation positive-class F1; earliest exact tie",
+  "refit": false,
+  "class_weights": "N_train/(2*n_c)",
+  "onecycle": {
+    "pct_start": 0.3,
+    "anneal_strategy": "linear",
+    "div_factor": 25.0,
+    "final_div_factor": 10000.0
+  },
+  "protocol": "file_tenfold",
+  "max_lr": 0.0003,
+  "initial_lr": 1.1999999999999999e-05,
+  "split_seed": 42
+}

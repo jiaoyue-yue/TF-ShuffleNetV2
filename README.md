@@ -1,8 +1,6 @@
 # TF-ShuffleNetV2
 
-本项目为论文《时频方向感知与门控语义融合的蛀干害虫振动声学状态分类方法》的配套代码。
 
-基于ShuffleNetV2构建轻量化分类模型TF-ShuffleNetV2，通过时频方向感知模块（TF-Stem）和门控语义融合模块（GateFusionHead），实现蛀干害虫无虫害与受害状态二分类。
 
 ## 1. 运行环境
 
